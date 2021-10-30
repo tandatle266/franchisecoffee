@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    background: #ffffff;
+    color: #555555;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* top bottom : 0 while left right : auto*/
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 300%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+
+}
+
+h2 {
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(230, 126, 34, 0.70);
+    content: "";
+    width: 100px;
+    margin: 30px auto 0 auto;
+
+}
+
+section {
+    padding: 80px 0;
+
+}
+
+h3 {
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+
+.box {
+    padding-right: 1%;
+}
+
+.box p {
+    font-size: 120%;
+    line-height: 145%;
+
+}
+.box h3,
+.box i {
+    text-align: center;
+}
+.box span {
+    padding:0;
+    font-size:110%;
+
+}
+
+/*--------------------------------------------------*/
+/* PARAGRAPHS */
+/*--------------------------------------------------*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/*--------------------------------------------------*/
+/* GENERATE LINKS */
+/*--------------------------------------------------*/
+a:link,
+a:visited {
+
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/*--------------------------------------------------*/
+/* ICONS */
+/*--------------------------------------------------*/
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin: 20px 35% 20px 35%;
+    width: 30%;
+
+}
+
+.icon-small {
+    display: inline-block;
+    color: #e67e22;
+    text-align: center;
+    font-size: 120%;
+    /* secrets to align text and icons*/
+    line-height: 120%;
+    margin-top: -5px;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+
+/*--------------------------------------------------*/
+/* BUTTONS */
+/*--------------------------------------------------*/
+.btn{
+    border:0;
+}
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+
+.btn:hover,
+.btn:active,
+input[type=submit] {
+    background-color: #cf6d17;
+
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/*--------------------------------------------------*/
+/* HEADER */
+/*--------------------------------------------------*/
+header {
+    background-image: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../css/img/coffee-beans-with-props-making-coffee.jpg);
+    background-size: cover; /* see all img instead just being zoom*/
+    background-position: center;
+    height: 100vh; /* 100% viewport height*/
+    background-attachment: fixed; /* ảnh sẽ đính kèm thẻo cuộn chuột*/
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* half of its width and of its height,up an to the left(the box)*/
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/*main-nav*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    font-size:130%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 10px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgba(230, 126, 34, 0.5);
+
+}
+
+/*sticky-nav*/
+.sticky {
+    position: fixed; /*stand at same position even when we scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 999999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+/* only apply when main-nav class inside sticky class */
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 16px 0;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky .glyphicon{
+    color: #000;
+}
+
+/*mobile-nav*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/*shop*/
+.section-shop{
+
+    width:100%;
+    position:relative;
+}
+.shop__header{
+    height:30px;
+
+}
+.shop__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.shop__footer{
+    height:30px;
+}
+
+.card{
+    min-height:300px;
+    margin:20px 1% 1% 0;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 2px 2px #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+}
+.card a:link{
+    color:  #e67e22;
+    border-bottom: none;
+}
+.card-link{
+    width: 100%;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+}
+.card-img{
+    width: 100%;
+    flex:1;
+    display: flex;
+    /*justify-content:center;*/
+    /*align-items: center;*/
+
+}
+.img--coffee {
+
+    width: 100%;
+
+
+}
+.card-name{
+
+}
+.card-name h3{
+    font-size:100%;
+    margin-top:10px;
+}
+.card-prices{
+
+}
+.card-btn{
+    display:flex;
+    justify-content:center;
+    align-content: center;
+
+}
+.btn{
+
+}
+
+.quantity-item{
+    text-align: center;
+    margin: 10% 20%;
+}
+.main-nav {
+    position: relative;
+}
+.link-cart--hover:hover .modal--cart{
+    display:flex;
+}
+
+/* ----------------------------------------------- */
+/* Footer */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 100%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-link {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-link li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-link li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited {
+    border: 0; /*define  tag a */
+    text-decoration: none;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-link li a:link,
+.social-link li a:visited {
+    font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+.glyphicon{
+    color: #fff;
+
+}
+.icon--cart{
+    padding: 10px 0;
+}
+.sticky .icon--cart{
+    padding: 16px 0;
+}
+.modal-content{
+    top:50px;
+}
+.btn,.btn-danger,.my-cart-btn{
+    background-color:#e67e22;
+}
+.btn-danger:hover{
+    background-color:#cf6d17;
+    cursor: pointer;
+}
+.my-products-remove{
+    color: #fff;
+}
+.btn,.btn-xs,.btn-danger,.my-products-remove{
+    color: #fff;
+}
+.btn-default:hover{
+    color: #fff;
+}
+.btn-primary.focus, .btn-primary:focus{
+    background-color:#ccc;
+}
+.glyphicon-shopping-cart{
+    font-size:130%;}
+.glyphicon:hover{
+    cursor:pointer;
+}
+.form--registration{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.contact-form-shop input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.contact-form-shop input[type="submit"]{
+    text-align: center;
+    width: 100px;
+    border-radius:10px;
+    margin-left: 10px;
+    height:40px;
+}
+.contact-form-shop input[type="submit"]:focus,.contact-form-shop input[type="submit"]:target {
+    border: 0;
+}
+.form--registration{
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left:0;
+    right: 0;
+    display: flex;
+    margin-top:15%;
+    background-color:#fff;
+    min-height:400px;
+    width:750px;
+    border-radius:10px;
+}
+
+.form--layout{
+    z-index: 5000;
+    width:100%;
+    height:100vh;
+    background-color:rgba(0,0,0,0.2);
+    position:fixed;
+    left:0;
+    top:0;
+    display: none;
+
+}
+
+.form-display-on{
+    display:flex;
+}
+.btn-danger.focus, .btn-danger:focus{
+    background-color:#cf6d17;
+    border:0;
+}
+.btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover{
+    background-color:#cf6d17;
+    border:0;
+    outline:0;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+    outline:0;
+}
+.modal-content{
+    min-width:max-content;
+}
+.btn:link, .btn:visited, input[type="submit"]{
+    padding:2px 10px;
+}
+
+
+
+.contact-form-shop input[type="button"]{
+    border-radius:10px;
+    text-align: center;
+    height:40px;
+    width:100px;
+}
+.display-btn-submit{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- cần thiết khi thiết kế responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!--  sắp xếp file theo order (thể hiện file nào sẽ bị overwriten) !-->
+    <link href="../vendors/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../vendors/css/Grid.css" rel="stylesheet" type="text/css">
+    <!--google font Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+          rel="stylesheet">
+    <!--icon-->
+    <link rel="stylesheet" href="../vendors/css/ionicons.min.css">
+    <link href="../resources/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../resources/css/queries.css" type="text/css">
+    <!-- favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="../resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--/favicons-->
+
+    <title>Shiny Coffee</title>
+
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="row">
+            <img src="../resources/img/white-logo.png" alt="Shiny Coffee logo-white" class="logo">
+            <img src="../resources/img/color-logo.png" alt="Shiny Coffee logo" class="logo-black">
+            <ul class="main-nav js--main-nav ">
+
+                <li>
+                    <a href="#features">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="./index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="./shop.php">Cửa Hàng</a>
+                </li>
+                <li>
+                    <a href="#plans">Đăng ký</a>
+                </li>
+                <li>
+                    <a href="./aboutUs.html">Tìm hiểu thêm</a>
+                </li>
+            </ul>
+            <a class="mobile-nav-icon js--mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>
+    </nav>
+    <div class="coffee-text-box">
+        <h1>Nắm bắt cơ hội.<br>Cùng nhau tỏa sáng.</h1>
+        <!--        <a class="btn btn-full js&#45;&#45;scroll-to-plan" href="#">Nắm bắt ngay! </a>-->
+        <!--        <a class="btn btn-ghost js&#45;&#45;scroll-to-start" href="#">Tìm hiểu thêm</a>-->
+
+
+    </div>
+</header>
+<section class="section-features js--section-features" id="features">
+    <div class="row">
+        <h2> Chất lượng &mdash; Uy tín là ưu tiên hàng đầu</h2> <!--html entities -->
+        <p class="long-copy">
+            Chúng tôi là Shiny Coffee, đối tác mới của bạn trong kinh doanh cà phê.Chúng tôi biết bạn đang gặp khó khăn
+            trong việc tạo dựng thương
+            hiệu lẫn tìm kiếm khách hàng.Vì vậy,hãy để chúng tôi đảm nhận việc đó thay cho bạn,chúng tôi là chuyên gia
+            trong việc này!
+        </p>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 box ">
+            <i class="ion-ios-infinite icon-big "></i>
+            <h3>Chuyên nghiệp</h3>
+            <p>
+                Chúng tôi sẽ cung cấp cho bạn những trang thiết bị tiên tiến nhất.Xây dựng hình ảnh/không gian thân
+                thiện với khách hàng.
+                Và đưa ra những kế hoạch tối ưu nhằm thu hút nguồn khách hàng tiềm năng.
+
+
+            </p>
+        </div>
+        <div class="col span-1-of-4 box">
+            <i class="ion-android-alarm-clock icon-big"></i>
+
+            <h3>Nhanh nhẹn</h3>
+            <p>
+                Triển khai,thi công,lên kế hoạch một cách nhanh chóng những vẫn đảm bảo chất lượng công việc,
+            </p>
+        </div>
+        <div class="col span-1-of-4 box">
+            <i class="ion-ios-nutrition-outline icon-big"></i>
+            <h3>100% organic</h3>
+            <p>
+                toàn bộ nguyên vật liệu chúng tôi cung cấp hoàn toàn là sản phẩm chúng tôi sản xuất từ những nông trại
+                đạt tiêu chuẩn Châu Âu.
+                Đem đến cho bạn chất lượng tốt nhất.
+            </p>
+
+        </div>
+        <div class="col span-1-of-4 box">
+            <i class="ion-android-cart icon-big"></i>
+            <h3><span>Thương hiệu quen thuộc</span></h3>
+            <p>
+                chúng tôi có số lượng lớn khách hàng thân thiết,trung thành với thương hiệu Shiny Coffee trải dài khắp
+                đất Việt.Hứa hẹn sẽ đem đến cho bạn một lượng lớn khách hàng mua sắm mỗi ngày.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="section-drink js--section-drink">
+    <ul class="drink-showcase ">
+        <li>
+            <!-- containers for images -->
+            <figure class="drink-photo">
+                <img src="../resources/img/coffee-1.jpg" alt="frappucino">
+            </figure>
+        </li>
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/coffee-2.jpg" alt="cappuccino">
+            </figure>
+        </li>
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/latte1.jpg" alt="latte">
+            </figure>
+        </li>
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/mocha.jpg" alt="mocha">
+            </figure>
+        </li>
+    </ul>
+    <ul class="drink-showcase clearfix">
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/tea-1.jpg" alt="chamomile tea">
+            </figure>
+        </li>
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/milk-tea.jpg" alt="milk tea taiwanese-style">
+            </figure>
+        </li>
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/blended.jpg" alt="">
+            </figure>
+        </li>
+        <li>
+            <figure class="drink-photo">
+                <img src="../resources/img/smoothie.jpg" alt="strawberry blueberry smoothie">
+            </figure>
+        </li>
+    </ul>
+</section>
+<section class="section-steps js--section-steps" id="steps">
+    <div class="row">
+        <h2>Cách đăng ký &mdash; Chỉ trong 3 bước </h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2 steps-box">
+            <img src="../resources/img/phone-version.png" alt="Shiny coffee app on Iphone" class="app-screen">
+        </div>
+        <div class="col span-1-of-2 steps-box">
+            <div class="works-step clearfix">
+                <div>1</div>
+                <p>
+                    Chọn mô hình kinh doanh phù hợp nhất với túi tiền của mình và nhấn đăng ký để được tư vấn kỹ càng
+                    hơn,.
+                </p>
+            </div>
+            <div class="works-step clearfix">
+                <div>2</div>
+                <p>
+                    chúng tôi sẽ tới gặp bạn trong thời gian sớm nhất để thống nhất và tiến hành thi công. </p>
+            </div>
+            <div class="works-step clearfix">
+                <div>3</div>
+                <p> Trong thời gian sớm nhất, chúng tôi sẽ biến mô hình kinh doanh mà bạn hằng mong ước thành hiện
+                    thực. </p>
+            </div>
+            <a href="https://www.apple.com/app-store/" target="_blank " class="btn-app"><img src="img/download-app.svg"
+                                                                                             alt="App store Button"></a>
+            <a href="https://play.google.com/store" target="_blank " class="btn-app"><img
+                    src="img/download-app-android.png"
+                    alt="Play store Button"></a>
+        </div>
+    </div>
+</section>
+<section class="section-cities js--section-cities">
+    <div><h2>Chúng tôi hiện đang ở các khu vực sau</h2></div>
+    <div class="row">
+        <div class="col span-1-of-4 box">
+            <img src="../resources/img/saigon.jpg" alt="ho chi minh city">
+            <h3>Hồ Chí Minh</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                6000+ khách hàng thân thiết
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                60+ cơ sở nhượng quyền
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="https://twitter.com/" target="_blank"> @Shinycoffee_hcm</a>
+            </div>
+
+        </div>
+        <div class="col span-1-of-4 box">
+            <img src="../resources/img/nhatrang.jpg" alt="Nha Trang">
+            <h3>Nha Trang</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                3700+ khách hàng thân thiết
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                30+ cơ sở nhượng quyền
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="https://twitter.com/" target="_blank">@Shinycoffee_nt</a>
+            </div>
+
+        </div>
+        <div class="col span-1-of-4 box">
+            <img src="../resources/img/daNang.jpg" alt="Da nang">
+            <h3>Đà Nẵng</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                4000+ khách hàng thân thiết
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                40+ cơ sở nhượng quyền
+
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="https://twitter.com/" target="_blank">@Shinycoffee_dn</a>
+            </div>
+
+        </div>
+        <div class="col span-1-of-4 box">
+            <img src="../resources/img/hn.jpg   " alt="Ha noi">
+            <h3>Hà Nội</h3>
+            <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                5200+ khách hàng thân thiết
+
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-ios-star icon-small"></i>
+                50+ cơ sở nhượng quyền
+
+            </div>
+
+            <div class="city-feature">
+                <i class="ion-social-twitter icon-small"></i>
+                <a href="https://twitter.com/" target="_blank">@Shinycoffee_hn</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="section-testimonials js--section--testimonials">
+    <div class="row">
+        <div class="col span-1-of-3">
+            <blockquote>
+                Ờ mây zing,gút chóp!!!
+                <cite> <img src="img/LeNguyenTrungDan.jpg" alt="Le Nguyen Trung Dan">Lê Nguyễn Trung Đan</cite>
+            </blockquote>
+
+        </div>
+        <div class="col span-1-of-3">
+            <blockquote>
+                Cần cù thì bù siêng năng.Chỉ có làm thì mới có ăn.
+                <cite> <img src="../resources/img/BuiXuanHuan.jpg" alt="Bui Xuan Huan">Bùi Xuân Huấn</cite>
+            </blockquote>
+
+        </div>
+        <div class="col span-1-of-3">
+            <blockquote>
+                Make coffee great again!!!
+                <cite> <img src="../resources/img/trump.jpg" alt="customer 3"> Đỗ Nam Trung</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+<section id="plans" class="section-plan js--section-plan">
+    <div class="row"><h2>Hãy bắt tay kinh doanh với chúng tôi ngay hôm nay</h2></div>
+    <div class="row">
+
+        <div class="col span-1-of-3 ">
+            <div class="plan-box">
+                <div><h3> plan 1</h3>
+                    <p class="plan-model"> Shiny store</p>
+                    <p class="plan-model-investment">vốn đầu tư chỉ từ 1.500.000.000đ</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Được đào tạo nghiệp vụ quản lý và nghiệp vụ bán hàng
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Hỗ trợ cung cấp nhân viên đã đào tạo qua nghiệp vụ
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Số lượng bán/ ngày Từ 300 ly
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Lợi nhuận trung bình/ tháng Từ 60.000.000đ
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn-plan btn-plan-full btn-modal">đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="col span-1-of-3 ">
+            <!--  divide in col help resize content-box as we want instead of override it-->
+            <div class="plan-box">
+                <div><h3> Plan 2</h3>
+                    <p class="plan-model">Shiny kiosk</p>
+                    <p class="plan-model-investment">Vốn đầu tư chỉ từ 400.000.000đ</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            có hỗ trợ các bạn trẻ khởi nghiệp
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Được đào tạo chuyên môn bán hàng kỹ càng
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Số lượng bán/ ngày từ 200 ly
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Lợi nhuận trung bình/ tháng từ 30.000.000đ
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn-plan btn-plan-ghost btn-modal">đăng ký ngay</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col span-1-of-3 ">
+            <div class="plan-box">
+                <div><h3>Plan 3</h3>
+                    <p class="plan-model">Shiny cart</p>
+                    <p class="plan-model-investment"> &nbsp;Vốn đầu tư chỉ từ 60.000.000đ </p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Được đào tạo chuyên môn bán hàng kỹ càng
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Số lượng bán/ ngày từ 100 ly
+                        </li>
+                        <li>
+                            <i class="ion-ios-checkmark-empty icon-small"></i>
+                            Lợi nhuận trung bình/ tháng từ 15.000.000đ
+                        </li>
+                        <li>
+                            <br><br>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn-plan btn-plan-ghost btn-modal">đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-action" class="row modal">
+        <div class="modal-content">
+            <i class="ion-close-round close"></i>
+            <form method="post" action="../resources/data/FranchiseHandle.php" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name-sign-up">họ và tên:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="fullname" id="name-sign-up" placeholder="họ và tên" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email-sign-up">Email:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email-sign-up" placeholder="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="address-sign-up">Địa chỉ:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="address" id="address-sign-up" placeholder="địa chỉ" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="phone-sign-up">Số điện thoại:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="tel" name="phone" id="phone-sign-up" pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                               placeholder="số điện thoại" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="type-sign-up">plan:</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="type" id="type-sign-up" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="liên hệ ngay" id="franchise-submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="section-form">
+    <div class="row">
+        <h2>Chúng tôi rất vui khi nghe ý kiến từ bạn</h2>
+    </div>
+    <div class="row">
+        <form method="post" action="../resources/data/FeedbackHandle.php" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="name">họ và tên:</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="text" name="fullname" id="name" placeholder="họ và tên" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="phone">Số điện thoại:</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="tel" name="phone" id="phone" pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                           placeholder="số điện thoại" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="find-us">Làm sao bạn biết đến chúng tôi? </label>
+                </div>
+                <div class="col span-2-of-3">
+                    <select id="find-us" name="research"><!-- drop-down box-->
+                        <option value=1 selected>được giới thiệu từ người khác</option>
+                        <option value=2>Khi đang tìm kiếm trên mạng</option>
+                        <option value=3>Quảng cáo</option>
+                        <option value=4>Mạng xã hội</option>
+                        <option value=5>Khác</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="drop-line">Hãy cho chúng tôi ý kiến cá nhân từ bạn</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <textarea id="drop-line" name="content" placeholder="ý kiến cá nhân"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3 ">
+                    <input type="submit" value="gửi" id="feedback-submit">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">cửa hàng</a>
+                </li>
+
+                <li>
+                    <a href="https://www.apple.com/app-store/" target="_blank">IOS App</a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store" target="_blank">Android App</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col span-1-of-2">
+            <ul class="social-link">
+                <li>
+                    <a href="https://facebook.com/" target="_blank">
+                        <i class="ion-social-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="ion-social-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/" target="_blank">
+                        <i class="ion-social-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>ĐỊA CHỈ: 17A Cộng Hòa phương 12 quận Tân Bình TP.HCM</p>
+        </div>
+        <div cart="col "></div>
+    </div>
+    <div class="row">
+        <div class="col" >
+            <p>Số Điện Thoại:0341234567</p>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col ">
+            <p>email: Shinycoffee@email.com</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <p>
+            Copyright of &copy; 2021 by Shiny Coffee. All rights reserved
+        </p>
+    </div>
+</footer>
+<!--download jquery from google hosted libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- help css media queries can execute in old browsers-->
+<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/src/respond.js"></script>
+<!-- enbale html5 elements in older browsers not supported html5 -->
+<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/src/html5shiv.js"></script>
+<!-- enbale pseudo class css3 in older browsers not supported -->
+<script src="https://cdn.jsdelivr.net/npm/selectivizr2@1.0.9/selectivizr2.min.js"></script>
+<!-- trigger elements when scrolling to it -->
+<script src="../vendors/js/jquery.waypoints.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="../resources/js/script.js"></script>
+
+</body>
+
+</html>
+

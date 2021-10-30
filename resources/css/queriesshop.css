@@ -1,0 +1,220 @@
+/* Big tablet to 1200px (widths smaller that the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    /* font-size nhỏ hơn khiến user ko bị choáng ngợp*/
+    body {
+        font-size: 18px;
+    }
+
+    /*thu gọn lại padding khiến user ko cảm thấy quá nhiều khoảng trắng*/
+    section {
+        padding: 60px 0;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%; /* 100-80=20;20/2=10%*/
+    }
+
+    .steps-box {
+        margin-top: 10px;
+    }
+
+    .works-step {
+        margin-bottom: 40px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    .app-screen {
+        width: 40%;
+    }
+
+    .icon-small {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .city-feature {
+        font-size: 90%;
+    }
+
+    .plan-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .plan-model {
+        font-size: 260%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    /*nếu col bị ép quá mức sẽ tự x hàng để hiển thị đủ content*/
+    .col {
+        width: 100%;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .works-step {
+        margin-bottom: 20px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+
+    .steps-box:first-child {
+        text-align: center;
+    }
+
+    /*fix column bị lệch*/
+    col {
+        margin: 0 0 4% 0;
+    }
+
+    .box h3, i {
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .plan-model {
+        text-align: center;
+    }
+
+    .plan-model-investment {
+        text-align: center;
+
+        font-size: 14px;
+    }
+
+    .plan-box ul {
+        width: 60%;
+        margin-left: 20%;
+        font-size: 18px;
+    }
+
+    /*mobile navigation*/
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        margin-right:20px;
+    }
+    .glyphicon{
+        margin-top: 10px;
+
+    }
+    .glyphicon-shopping-cart{
+        font-size:130%;}
+
+
+    .main-nav {
+        float: left;
+    }
+
+    .main-nav li {
+        display: block; /*override inline-block*/
+        margin-top: 35px;
+    }
+    .main-nav li .icon--cart{
+        display:none;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+
+    .sticky .mobile-nav-icon i {
+        color: #555;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+/* Small phones: from 0 to 480px (ip5 and previous)*/
+@media only screen and (max-width: 480px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    .section {
+        padding: 25px 0;
+    }
+
+    .plan-box ul {
+        font-size: 17px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
